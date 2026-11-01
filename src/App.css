@@ -31,3 +31,22 @@
   max-width: 80%;
   margin-bottom: 24px;
 }
+
+.modules-table {
+  width: 700px;
+  max-width: 100%;
+  margin: 32px auto 0;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.modules-table th,
+.modules-table td {
+  padding: 12px;
+  border: 1px solid #999;
+}
+
+.modules-table th {
+  color: white;
+  background: #ef7c00;
+}
