@@ -50,3 +50,15 @@
   color: white;
   background: #ef7c00;
 }
+
+.admission-list {
+  width: 500px;
+  max-width: calc(100% - 40px);
+  margin: 32px auto 0;
+  padding-left: 24px;
+  text-align: left;
+}
+
+.admission-list li {
+  padding: 8px 0;
+}
