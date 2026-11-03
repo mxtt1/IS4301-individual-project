@@ -1,17 +1,23 @@
-const pages = ['home', 'academics', 'admission']
+import { NavLink } from 'react-router-dom'
 
-function NavigationPanel({ currentPage, onNavigate }) {
+const pages = [
+  { name: 'Home', path: '/' },
+  { name: 'Academics', path: '/academics' },
+  { name: 'Admission', path: '/admission' },
+]
+
+function NavigationPanel() {
   return (
     <nav className="navigation" aria-label="Main navigation">
       {pages.map((page) => (
-        <button
-          className={currentPage === page ? 'active' : ''}
-          key={page}
-          type="button"
-          onClick={() => onNavigate(page)}
+        <NavLink
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          end={page.path === '/'}
+          key={page.path}
+          to={page.path}
         >
-          {page.charAt(0).toUpperCase() + page.slice(1)}
-        </button>
+          {page.name}
+        </NavLink>
       ))}
     </nav>
   )

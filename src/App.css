@@ -6,17 +6,17 @@
   background: #003d7c;
 }
 
-.navigation button {
+.navigation a {
   padding: 8px 16px;
   color: white;
   background: transparent;
   border: 1px solid white;
   border-radius: 4px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.navigation button:hover,
-.navigation button.active {
+.navigation a:hover,
+.navigation a.active {
   color: #003d7c;
   background: white;
 }
