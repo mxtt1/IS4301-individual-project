@@ -4,6 +4,7 @@ const pages = [
   { name: 'Home', path: '/' },
   { name: 'Academics', path: '/academics' },
   { name: 'Admission', path: '/admission' },
+  { name: 'Login', path: '/login' },
 ]
 
 function NavigationPanel() {
